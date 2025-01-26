@@ -5,8 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+<!-- fontawsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+
+
 </head>
 <body>
-    <h1>git add</h1>
+    <main class="max-w-screen-x1 mx-auto px-16 lq:px-28">
+<header class="flex pt-18 mb-20">
+    <!-- text cintent -->
+    <div>
+        <h1 class="text-4xl md:text-7xl">Its good <br>tea time at the<br>Tea house</h1>
+        <p class="text-gray-600 w-3/4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eos.</p>
+        <br>
+        <button class="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-4 rounded-lg font-bold "> Explore More <i class="fa fa-arrow-right -rotate-45"></i></button>
+
+    </div>
+    <!-- image content -->
+    <div class="relative ">
+        <div>
+            <img class="w-full"  src="./images/banner.png" alt="">
+        </div>
+<!-- card -->
+        <div class="  absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-30 md:top-80">
+            <!-- icon -->
+            <div><i class="fa fa-star text-amber-500"></i></div>
+            <!-- text -->
+            <div class="ml-2 font-bold">
+                <h2 class="lg:text-2xl font-bold">5.00</h2>
+                <p class="text-gray-600">Lorem, ipsum.</p>
+            </div>
+        </div>
+    </div>
+        
+</header>
+<!-- heatured -->
+ <section class="py-8 lg:py-24">
+    <!-- title -->
+    <div class="text-center mb-8">
+        <h1 class="text-4xl font-bold mb-2">
+            Our Feature products
+        </h1>
+        <p class="text-gray-600 mx-auto mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, at?</p>
+    </div>
+    <!-- gridcard -->
+    <div class="grid grid-cols-4 gap-4 text-center" >
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+            <img class="mx-auto" src="./images/tea-2.png" alt="">
+           <div>
+            <h2 class="font-bold pt-4">Milk Tea</h2>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, autem?
+           </p> 
+        </div>
+        </div>
+    </div>
+ </section>
+    </main>
 </body>
 </html>
